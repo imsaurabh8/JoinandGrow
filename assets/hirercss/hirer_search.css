@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 50vh;
+
+    background-size: cover;
+    margin-top:150px;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    font-family: sans-serif;
+
+}
+h1{
+    color: rgb(0, 217, 255);;
+    margin-bottom: 70px;
+    font-size: 45px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.header h1 span{
+color:#fff;
+
+}
+.search-field{
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+}
+.Business{
+    width: 200px;
+    font-size:17px;
+}
+.location{
+    width: 200px;
+    margin:10px;
+    font-size:17px;
+}
+.search-btn{
+    margin:20px;
+    height: 50px;
+    width: 150px;
+    background: rgb(0, 217, 255);
+    border: none;
+    color: #000;
+    border-radius: 25px;
+    font-size:17px;
+}
+.search-btn:hover{
+    background: rgb(0, 217, 255);
+    cursor: pointer;
+}
+.form-box{
+    width:100%;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 25px;
+}

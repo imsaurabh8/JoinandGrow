@@ -1,0 +1,77 @@
+.logout {
+    padding: 10px 20px;
+    border: 0;
+    background: rgb(0, 217, 255);
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+     margin-right: 20px;
+     position:absolute;
+     top:0;
+     right:0;
+}
+
+.header{
+    height: 40vh;
+    width: 70%;
+    background-color: rgba(0,0,0,0.5);
+    background-size: cover;
+    margin-top:100px;
+    margin-left:250px;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    font-family: sans-serif;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+
+}
+
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: rgba(0,0,0,0);
+
+  padding: 25px 30px;
+  border-radius: 5px;
+
+  margin-left:350px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+h1{
+    color: #fff;
+    margin-top:40px;
+    font-size: 45px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+h2{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+.header h1 span{
+    color:rgb(0, 217, 255);
+}
+.header h2 span{
+    color:rgb(0, 217, 255);
+}
+
+.an_search {
+
+    padding: 10px 20px;
+    border: 0;
+    background: rgb(0, 217, 255);
+    font-weight: bold;
+    cursor: pointer;
+    position:absolute;
+    margin-top:40px;
+    margin-left:320px;
+
+
+
+}
