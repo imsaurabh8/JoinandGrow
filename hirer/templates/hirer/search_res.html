@@ -1,0 +1,61 @@
+{% extends 'utilyf/basic.html' %}
+
+{% load static %}
+{% block title%} Search Results{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'hirercss/search_res.css' %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock %}
+
+
+
+
+
+{% block body %}
+
+
+    {% for obj in list %}
+    <div class="blog-post">
+
+
+        <div class="blog-post_img">
+           <img src="{{ obj.profile_pic }}" width=200 height=200>
+        </div>
+        <div class="blog-post_info">
+            <h1 class="blog-post_title">{{ obj.full_name }}</h1>
+            <div class="blog-post_date">
+                <span>{{ obj.skills }}</span>
+                <span>City : {{ obj.City }}</span>
+
+                 <span>Experience  :  {{ obj.exp }} Years</span>
+
+                <span>Service Charges :       Rs.{{ obj.charge }}</span>
+            </div>
+
+            <p class="blog-post_text">
+            </p>
+
+
+
+            <a href="tel:{{obj.Phone_numb }}" class="blog-post_cta"> Call me</a>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+<!--    <div class="nav-links" id="nav-links">-->
+<!--        <form action="/hirer/logout/" method="post" name="logout_view">-->
+<!--          {% csrf_token %}-->
+<!--            <input id="log-out" class="logout" type="submit" name="logout" value="Sign Out">&ndash;&gt;-->
+<!--        </form>-->
+<!--    </div>-->
+{% endfor %}
+
+{% endblock %}
+
+

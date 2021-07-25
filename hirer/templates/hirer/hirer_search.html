@@ -1,0 +1,31 @@
+
+{% extends 'utilyf/basic.html' %}
+
+{% load static %}
+{% block title%} Looking for??{% endblock %}
+{% block styles %}
+
+        <link rel="stylesheet" href="{% static 'hirercss/hirer_search.css' %}">
+{% endblock %}
+
+
+
+
+
+{% block body %}
+
+
+        <div class="header">
+             <form action="/hirer/" method="post">
+                 {% csrf_token %}
+                 <h1>Find <span>Everything</span> near you..</h1>
+                 <div class="form-box">
+                    <input type="text" class="search-field Business" name="occupation" placeholder="Business, Services..">
+                     <input type="text" class="search-field location" placeholder="Location" name="place">
+                     <input type="submit" class="search-btn" value="Search" />
+<!--                     <button class="search-btn" type="button">Search</button>-->
+                 </div>
+             </form>
+        </div>
+
+{% endblock %}

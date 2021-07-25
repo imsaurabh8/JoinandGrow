@@ -1,0 +1,38 @@
+{% extends 'utilyf/basic.html' %}
+
+{% load static %}
+{% block title%} About Us{% endblock %}
+{% block styles %}
+
+        <link rel="stylesheet" href="{% static 'index.css' %}">
+{% endblock %}
+
+{% block body %}
+ <div class="nav-bar">
+            <div class="nav-links" id="nav-links">
+                <i class="fas fa-times" onclick="closeMenu()"></i>
+                <ul>
+                     <a href="/"><li>HOME</li></a>
+                    <a href="about/"><li>ABOUT US</li></a>
+
+
+                </ul>
+<!--                <button type="button" class="btn">SIGN UP</button>-->
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </div>
+
+        <div class="banner-title">
+            <h1>Everyone has <span>right to</span> showcase <span>their skills.</span></h1>
+<!--            <button type="button" class="btn">EXPLORE</button>-->
+<!--            <a href="hirer/signup" class="'btn>">Are You Hirer?</a>-->
+            <button onclick="location.href = 'hirer/';" class="btn" >Are You Hirer?</button>
+            <button onclick="location.href = 'hiree/';" class="btn" >Are You Hiree?</button>
+
+
+        </div>
+
+
+
+
+{% endblock %}

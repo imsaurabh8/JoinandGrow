@@ -1,0 +1,75 @@
+{% extends 'utilyf/basic.html' %}
+
+{% load static %}
+{% block title%}Skills{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'hireecss/skills.css' %}">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock %}
+
+
+
+{% block body %}
+  <div class="container">
+    <div class="title">Skills...</div>
+    <div class="content">
+
+      <form action="/hiree/skills/" method="post">
+        {% csrf_token %}
+
+        <div class="user-details">
+
+          <div class="input-box">
+            <span class="details">Skills</span>
+            <select class="option1" name="hiree_skills">
+              <option disabled="disabled" selected="selected">Choose your profession here</option>
+              <option> Electrician </option>
+              <option> Plumber </option>
+              <option> Carpenter </option>
+              <option> Barber </option>
+              <option> Others </option>
+
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Experience</span>
+            <input type="number" placeholder="experience in years" name="hiree_exp" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Visiting Charge</span>
+            <input type="number" placeholder="Service charges / visiting charges."  name="hiree_charge" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Preferred Area</span>
+            <input type="text" placeholder="Enter the area you wish to serve in" name="hiree_AvalArea" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Availibility time</span>
+             <select class="option1" type="text" name="hiree_AvalTime" required>
+              <option disabled="disabled" selected="selected">Choose your profession here</option>
+              <option> Morning</option>
+              <option> Evening  </option>
+              <option> Afternoon </option>
+              <option> Barber </option>
+              <option> Others </option>
+
+            </select>
+
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Any Specialization..</span>
+            <input type="text" placeholder="Please specify if any" name="hiree_others" >
+          </div>
+          
+        </div>
+       
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+{% endblock %}
+

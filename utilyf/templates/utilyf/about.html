@@ -1,0 +1,68 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static 'about.css' %}">
+    <script src="https://kit.fontawesome.com/dce9753376.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+ <div class="nav-bar">
+            <div class="nav-links" id="nav-links">
+
+                <ul>
+                     <a href="/"><li>HOME</li></a>
+                </ul>
+            </div>
+ </div>
+ <div class="content">
+    <div class="about">
+        <div class="inner-section">
+            <h1 class="heading">Vision</h1>
+            <p class="text">
+                This portal is aimed to help daily wagers for whom finding the work is not an easy task.
+                They can register with us and get notified whenever their is some opportunity.
+                Also, the other part of portal connects the one who is searching for some worker in any particular area
+                to the person suitable for that job by providing all the necessary information.
+
+            </p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <h1>Team</h1>
+        <div class="team">
+          <div class="team_member">
+            <div class="team_img">
+              <img src="{% static 'sakshi.png' %}"  alt="Team_image">
+            </div>
+            <h3>Sakshi Agrawal</h3>
+            <p class="role">Developer</p>
+              <div class="social-icons">
+              <a href="https://www.linkedin.com/in/sakshi-agrawal-4a70751b0/"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/SakshiiAgrawal"><i class="fab fa-github"></i></a>
+          </div>
+            <p>Currently in 3rd year, pursuing Computer Science Engineering in BMSIT&M, Bengaluru. Have great interest in field of Web Development and Data Science espacially, deep learning.</p>
+          </div>
+          <div class="team_member">
+            <div class="team_img">
+              <img src="{% static 'saurabh.png' %}"  alt="Team_image">
+            </div>
+            <h3>Saurabh Prakash</h3>
+            <p class="role">Developer</p>
+              <div class="social-icons">
+              <a href="https://www.linkedin.com/in/saurabh-prakash-6496711ab/"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/imsaurabh8" ><i class="fab fa-github"></i></a>
+          </div>
+
+
+
+            <p>pursuing Computer Science Engineering in BMSIT&M, Bengaluru. I want to contribute towards the society through my knowledge and skills.</p></div>
+        </div>
+      </div>
+     </div>
+</body>
+</html>

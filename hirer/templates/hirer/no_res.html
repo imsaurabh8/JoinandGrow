@@ -1,0 +1,31 @@
+
+{% extends 'utilyf/basic.html' %}
+
+{% load static %}
+{% block title%} Looking for??{% endblock %}
+{% block styles %}
+
+        <link rel="stylesheet" href="{% static 'hirercss/no_res.css' %}">
+{% endblock %}
+
+
+
+
+
+{% block body %}
+
+
+        <div class="header">
+
+            <form action="/hirer/" name="search">
+                <h1><span>Sorry, </span>We Could <span>Not</span> find any<span> result</span></h1> <br><h2>for your <span> Search!</span></h2>
+
+                <input type="submit"  class="an_search" href="hirer/" value="Try another Search" > </input>
+
+            </form>
+
+
+        </div>
+
+
+{% endblock %}
